@@ -1,0 +1,80 @@
+body{
+    width: 98%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    background-color: rgb(236, 235, 235);
+}
+h1{
+    color: cadetblue;
+}
+b{
+    color: crimson;
+}
+h5{
+    color: cyan;
+}
+
+#form{
+    border: 2px solid;
+    border-block-end-style: dotted;
+    margin: 10%;
+}
+#form>div{
+    width: 90%;
+    font-size: xx-large;
+}
+input[type='text']{
+    
+    width: 100%;
+}
+input[type='tel'], input[name='district'], input[name='Location'], input[name='denomination']{
+    width: 100%;
+
+}
+input[type='submit']{
+    margin-top: 5%;
+}
+input{
+    font-size: x-large;
+    margin-bottom: 15%;
+}
+div{
+    margin-bottom: 5%;
+}
+@media (max-width:500px){
+    label{
+        width:100%;
+    }
+    input{
+        border: none;
+        width: 100%;
+    }
+}
+@media (min-width:720px){
+    input{
+        font-size: xx-large;
+        margin-bottom: 1%;
+    }
+    body{
+        width: 95%;
+    }
+    #form{
+        padding: 8%;
+    }
+    #form>div{
+        width: 100%;
+    }
+    input[type='text']{
+        width: 70%;
+    }
+    label[for='number'], label[for='district'], label[for='Location'], label[for='denomination'], label[for='gender'], label{
+        float: left;
+    }
+    input[type='tel'], input[name='district'], input[name='Location'], input[name='denomination']{
+        width: 50%;
+    
+    }
+    
+
+}
