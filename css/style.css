@@ -14,7 +14,12 @@ b{
 h5{
     color: cyan;
 }
-
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
 #form{
     border: 2px solid;
     border-block-end-style: dotted;

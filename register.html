@@ -27,15 +27,20 @@
                 <label for="number">Your Phone Number<b>*</b></label>
                 <input type="tel" placeholder="Your Phone Number" name="number" required />
             </div>
-            <div>
+            <div id="memberSelection">
+                <label for="member">Are you a member?<b>*</b></label>
+                YES<input type="radio" name="gender" value="yes" required>
+                NO<input type="radio" name="gender" value="female" required>
+            </div>
+            <div class="yes hidden">
                 <label for="district">Your Group of District<b>*</b></label>
                 <input type="text" placeholder="Your Group of District" name="district" required />
             </div>
-            <div>
+            <div class="yes hidden">
                 <label for="Location">Your District Location<b>*</b></label>
                 <input type="text" placeholder="Your District Location" name="Location" required />
             </div>
-            <div>
+            <div class="no hidden">
                 <label for="denomination">Your Denomination<b>*</b></label>
                 <input type="text" placeholder="Your Denomination" name="denomination" required />
             </div>
