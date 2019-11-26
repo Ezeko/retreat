@@ -20,9 +20,17 @@ h5{
 .show{
     display: block;
 }
+select{
+    width: 60%;
+    height: 20%;
+    align-content: center;
+    font-size: x-large;
+}
 #form{
     margin: 10%;
+    /*background-image: url(./banner.jpeg);*/
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /*color: rgba(81, 17, 184, 0.925);*/
 }
 #form>div{
     width: 90%;
@@ -38,6 +46,7 @@ input[type='tel'], input[name='district'], input[name='Location'], input[name='d
 }
 input[type='submit']{
     margin-top: 5%;
+    background-color: yellowgreen;
 }
 input{
     font-size: x-large;

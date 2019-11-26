@@ -5,11 +5,9 @@
 
     </head>
     <body>
-        <form>
-            <div>
+        <form action="backend/reg_validate.php" method="POST">
                     <img src='https://res.cloudinary.com/ezeko/image/upload/v1574728286/images/dlcm_logo_tyrhka.jpg'>
                     <h1>Welcome to Deeper Life December Retreat Ore Region</h1>
-            </div>
             <h2>Do not hesistate to fill the below Spaces correctly</h2>
             <h5>God bless you!!!!!</h5>
             <div id="form">
@@ -32,18 +30,18 @@
             </div>
             <div id="memberSelection">
                 <label for="member">Are you a member?<b>*</b></label>
-                YES<input type="radio" name="gender" value="yes" required>
-                NO<input type="radio" name="gender" value="female" required>
+                YES<input type="radio" name="member" value="yes" required>
+                NO<input type="radio" name="member" value="no" required>
             </div>
-            <div class="yes hidden">
+            <div class="yes show">
                 <label for="district">Your Group of District<b>*</b></label>
                 <input type="text" placeholder="Your Group of District" name="district" required />
             </div>
-            <div class="yes hidden">
-                <label for="Location">Your District Location<b>*</b></label>
-                <input type="text" placeholder="Your District Location" name="Location" required />
+            <div class="yes show">
+                <label for="location">Your District Location<b>*</b></label>
+                <input type="text" placeholder="Your District Location" name="location" required />
             </div>
-            <div class="no hidden">
+            <div class="no show">
                 <label for="denomination">Your Denomination<b>*</b></label>
                 <input type="text" placeholder="Your Denomination" name="denomination" required />
             </div>
@@ -51,6 +49,15 @@
                 <label for="gender">Gender<b>*</b></label>
                 male<input type="radio" name="gender" value="male" required>
                 female<input type="radio" name="gender" value="female" required>
+            </div>
+            <div>
+                <select>
+                    <option value='none' required>Select Category</option>
+                    <option value="children" aria-required="true">Children</option>
+                    <option value="youth" aria-required="true">Youth</option>
+                    <option value="campus">Campus</option>
+                    <option value="adult">Adult</option>
+                </select>
             </div>
             <div id="ageSelection">
                 <label for="age">Choose Your Age Range<b>*</b></label>
@@ -68,5 +75,6 @@
 
             
         </form>
+        <script src="./js/member.js"></script>
     </body>
 </html>
