@@ -21,9 +21,8 @@ h5{
     display: block;
 }
 #form{
-    border: 2px solid;
-    border-block-end-style: dotted;
     margin: 10%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 #form>div{
     width: 90%;
