@@ -18,8 +18,8 @@ $age = $_POST['age'];
 //check if user has been registered before
 
 $check = "SELECT * FROM `participants` WHERE surname = '$surname' AND otherName= '$otherNames' 
-AND address='$address' AND phonenumber='$phonenumber' AND isMember= '$isMember' AND district = '$group' 
-AND location = '$location' AND gender = '$gender' AND denomination = '$denomination' 
+AND H_address='$address' AND phonenumber='$phonenumber' AND isMember= '$isMember' AND district = '$group' 
+AND C_location = '$location' AND gender = '$gender' AND denomination = '$denomination' 
 AND section = '$category' AND age = '$age'";
 
 $query_check = mysqli_query($conn, $check) or die(mysqli_error($conn));
@@ -30,7 +30,7 @@ if (result > 0){
 // If the details already exists, with an error message will be displayed.
 echo  "<script>alert('Participant Already Registered!!!'); window.location.replace('../register.html');</script>";
 }else{
-    $sql = "INSERT INTO `participants` (surname, otherName, address, phonenumber, isMember, district, location, denomination, gender, age, section) 
+    $sql = "INSERT INTO `participants` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
     VALUES 
     ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
 
