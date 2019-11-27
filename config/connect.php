@@ -11,7 +11,7 @@ if(!$conn){
     echo (mysqli_error($conn));
 
 }else {
-    echo('Database connected Successfully! ');
+    //echo('Database connected Successfully! ');
 }
 
 ?>

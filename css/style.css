@@ -28,7 +28,7 @@ select{
 }
 #form{
     margin: 10%;
-    /*background-image: url(./banner.jpeg);*/
+    background-image: url(https://res.cloudinary.com/ezeko/image/upload/v1575449121/images/WhatsApp_Image_2019-11-26_at_11.48.05_AM_zzprc7.jpg);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     /*color: rgba(81, 17, 184, 0.925);*/
 }
