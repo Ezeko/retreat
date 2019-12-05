@@ -13,6 +13,34 @@ b{
 }
 h5{
     color: cyan;
+    
+}
+
+.blinking{
+    animation: blinkingText 0.8s infinite;
+
+}
+
+@keyframes blinkingText{
+    0%{ transform: none;
+    
+    }
+    49%{ transform: 1.49;
+    color: transparent;
+    }
+    50%{ transform:1.5;
+        color: transparent;
+    }
+    70%{transform: 1.7;
+        color: transparent;
+    }
+    90%{transform: 1.9;
+        color: transparent;
+    
+    }
+    100%{transform: 2;
+        
+    }
 }
 .hidden{
     display: none;
@@ -28,7 +56,7 @@ select{
 }
 #form{
     margin: 10%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 4px 10px 20px rgba(0,0,0,0.19), 4px 6px 6px rgba(0,0,0,0.23);
     /*color: rgba(81, 17, 184, 0.925);*/
 }
 #form>div{
@@ -40,7 +68,7 @@ input[type='text']{
     width: 100%;
 }
 input[type='tel'], input[name='district'], input[name='Location'], input[name='denomination']{
-    width: 100%;
+    width: 50%;
 
 }
 input[type='submit']{
@@ -83,9 +111,12 @@ div{
     label[for='number'], label[for='district'], label[for='Location'], label[for='denomination'], label[for='gender'], label{
         float: left;
     }
-    input[type='tel'], input[name='district'], input[name='Location'], input[name='denomination']{
+    input[type='tel'], input[name='district'], input[name='denomination']{
         width: 50%;
     
+    }
+    input[name='Location']{
+        width:30%;
     }
     
 
