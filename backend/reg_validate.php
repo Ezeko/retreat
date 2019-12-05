@@ -65,7 +65,7 @@ echo  "<script>alert('Participant Already Registered!!!'); window.location.repla
     $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
     if ($query){
-        echo  "<script>alert('Participant Registered Successfully.!!!'); window.location.replace('../register.html');</script>";
+        echo  "<script>alert('Participant Registered Successfully.!!!'); window.location.replace('../index.html');</script>";
 
     }
 }

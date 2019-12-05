@@ -1,0 +1,175 @@
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    min-height: 1000px;
+}
+p{
+    text-align: center;
+    color: darkblue;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-style: oblique;
+}
+#header{
+    grid-area: header;
+    background-color: rgb(112, 107, 107);
+    width: 100%;
+    transform: relative;
+    position: fixed;
+    top: 0;
+    scroll-padding: 10px;
+    padding-right: 25%;
+    padding-bottom: 2px;
+    float: inline-start;
+}
+#header-img{
+    height:55px;
+    border-radius: 20%;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#header-img:hover{
+    transform: rotate(40deg);
+}
+@media (max-width:720px){
+    #nav-bar{
+        font-size:20px;
+        float:right;
+        padding-right: 20%;
+        overflow: hidden;
+        padding-top: 10px;
+    
+    }
+}
+@media (min-width:1200px){
+#nav-bar{
+    font-size:40px;
+    float:right;
+    padding-right: 15%;
+    overflow: hidden;
+    padding-top: 10px;
+
+}}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+    
+}
+a:hover{
+    background-color: blue;
+}
+a.active{
+    background-color: rgb(14, 240, 44);
+}
+#main{
+    grid-area: main;
+    background-color: aqua;
+    width:100%;
+    display: block;
+
+}
+#footer{
+    background-color: brown;
+    grid-area: footer;
+
+}
+#about-h1{
+    padding-top: 45px;
+    width:100%;
+    font-size:30px;
+    text-align: center;
+    color: navy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*display for mobile*/
+@media (max-width:600px){
+    .social{
+        float: right;
+        color: blue;
+        padding-right: 10%;
+        padding-bottom: 2px;
+        font-size: 20px;
+    }
+    #contact-h1{
+        padding-top: 45px;
+        width:100%;
+        display: block;
+        font-size:25px;
+        text-align: center;
+        color: tomato;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    #contact-details{
+        display: block;
+    }
+}
+b{
+    color: rgb(13, 9, 241);
+}
+/*display for tablets and bigger screens*/
+@media (min-width:720px){
+.social{
+    float: right;
+    padding-right: 50%;
+    padding-bottom: 10px;
+    font-size: 60px;
+}
+#contact-h1{
+    padding-top: 45px;
+    width:100%;
+    font-size:40px;
+    text-align: center;
+    color: tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#contact-details{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr); 
+}
+#email{
+    width:80%;
+    height: 15%;
+}
+#submit{
+    height: 18%;
+    
+}
+}
+#submit{
+    background-color: rgb(148, 4, 4);
+}
+#submit:hover{
+    background-color: yellowgreen;
+}
+#about{
+    font-display: justify;
+    text-align: justify;
+    display: block;
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-left:5%; 
+}
+
+#contact{
+     display: inherit;
+    padding: 5%;
+      
+}
+#form{
+    background-color: aliceblue;
+    height: 200px;
+    padding:5%;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
