@@ -75,7 +75,7 @@ a.active{
 
 }
 #footer{
-    background-color: brown;
+    background-color: green;
     grid-area: footer;
 
 }
@@ -172,4 +172,31 @@ b{
     padding:5%;
 
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.blinking{
+    animation: blinkingText 1s infinite;
+
+}
+
+@keyframes blinkingText{
+    0%{ transform: none;
+    
+    }
+    49%{ transform: 1.49;
+    color: transparent;
+    }
+    50%{ transform:1.5;
+        color: transparent;
+    }
+    70%{transform: 1.7;
+        color: transparent;
+    }
+    90%{transform: 1.9;
+        color: transparent;
+    
+    }
+    100%{transform: 2;
+        
+    }
 }

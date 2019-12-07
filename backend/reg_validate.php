@@ -4,7 +4,7 @@ require_once('../config/connect.php');// call connection
 //save form values
 
 $surname = filter_input(INPUT_POST, 'surname', FILTER_SANITIZE_ENCODED);
-$otherNames = filter_input(INPUT_POST, 'otherName', FILTER_SANITIZE_ENCODED);
+$otherNames = filter_input(INPUT_POST, 'otherName', FILTER_SANITIZE_SPECIAL_CHARS);
 $address =  filter_input(INPUT_POST, 'address', FILTER_SANITIZE_SPECIAL_CHARS);
 $phonenumber = filter_input(INPUT_POST, 'number', FILTER_SANITIZE_ENCODED);
 $isMember = filter_input(INPUT_POST, 'member', FILTER_SANITIZE_ENCODED);
@@ -13,7 +13,7 @@ $location = filter_input(INPUT_POST, 'location', FILTER_SANITIZE_ENCODED);
 $gender = filter_input(INPUT_POST, 'gender', FILTER_SANITIZE_ENCODED);
 $denomination = filter_input(INPUT_POST, 'denomination', FILTER_SANITIZE_ENCODED);
 $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_ENCODED);
-$age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_ENCODED);
+$age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
 
 
 //check if user has been registered before
@@ -52,9 +52,10 @@ echo  "<script>alert('Participant Already Registered!!!'); window.location.repla
         ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
     
         $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+        continue;
     
     
-    } continue;
+    } 
 
 
 

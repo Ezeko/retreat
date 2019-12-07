@@ -55,8 +55,11 @@ select{
     font-size: x-large;
 }
 #form{
-    margin: 10%;
+    margin-bottom: 10%;
+    
     box-shadow: 4px 10px 20px rgba(0,0,0,0.19), 4px 6px 6px rgba(0,0,0,0.23);
+    background-color: black;
+    color: white;
     /*color: rgba(81, 17, 184, 0.925);*/
 }
 #form>div{
@@ -70,6 +73,9 @@ input[type='text']{
 input[type='tel'], input[name='district'], input[name='Location'], input[name='denomination']{
     width: 50%;
 
+}
+input[name='district'], input[name='location'], input[name='denomination']{
+    font-size: large;
 }
 input[type='submit']{
     margin-top: 5%;
@@ -106,18 +112,18 @@ div{
         width: 100%;
     }
     input[type='text']{
-        width: 70%;
+        width: 50%;
     }
     label[for='number'], label[for='district'], label[for='Location'], label[for='denomination'], label[for='gender'], label{
         float: left;
     }
-    input[type='tel'], input[name='district'], input[name='denomination']{
+    input[type='tel'], input[name='district'], input[name='denomination'], input[name='location']{
         width: 50%;
     
     }
-    input[name='Location']{
+    /**input[name='location']{
         width:30%;
-    }
+    }**/
     
 
 }
