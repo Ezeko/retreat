@@ -65,17 +65,17 @@ a:hover{
     background-color: blue;
 }
 a.active{
-    background-color: rgb(14, 240, 44);
+    background-color: rgb(7, 177, 30);
 }
 #main{
     grid-area: main;
-    background-color: aqua;
+    background-color: rgb(35, 36, 36);
     width:100%;
     display: block;
 
 }
 #footer{
-    background-color: green;
+    background-color: rgba(22, 139, 6, 0.671);
     grid-area: footer;
 
 }

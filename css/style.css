@@ -68,14 +68,14 @@ select{
 }
 input[type='text']{
     
-    width: 100%;
+    width: 60%;
 }
 input[type='tel'], input[name='district'], input[name='Location'], input[name='denomination']{
-    width: 50%;
+    width: 60%;
 
 }
 input[name='district'], input[name='location'], input[name='denomination']{
-    font-size: large;
+    font-size: x-large;
 }
 input[type='submit']{
     margin-top: 5%;
