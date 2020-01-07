@@ -40,9 +40,8 @@ require_once('../config/connect.php');// call connection
     <?php $SQ="SELECT * FROM `campus` WHERE section = 'campus'";
         $query = mysqli_query($conn, $SQ) or die(mysqli_error($conn));
         $count = mysqli_num_rows($query);
-        while ($count=0){
-            $count++;
-        $rows= mysqli_fetch_assoc($query);
+        while ( $rows= mysqli_fetch_assoc($query)){
+
             echo "<tr class='w3-hover-blue'>
         <td></td>
         <td>".  ($rows['fullname']). "</td>
