@@ -365,7 +365,7 @@ selection.addEventListener('click', (e) => {
         })
     }
     else if (member[1].checked){
-
+        const denomination = document.getElementByName('denomination')
         yesShow.forEach(yes => {
             yes.classList.remove('show')
             yes.classList.add('hidden')
@@ -374,6 +374,9 @@ selection.addEventListener('click', (e) => {
             no.classList.remove('hidden')
             no.classList.add('show')
         });
+        console.log(denomination)
+        console.log('work')
+        denomination.setAttribute('required', 'true')
     }
 })
 

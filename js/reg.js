@@ -24,6 +24,8 @@ selection.addEventListener('click', (e) => {
             yes.classList.remove('hidden')
             yes.classList.add('show')
         });
+        loc.setAttribute('required', 'true')
+        district.setAttribute('required', 'true')
 
         // console.log(district.value)
         district.addEventListener('change', (e) => {
@@ -365,7 +367,7 @@ selection.addEventListener('click', (e) => {
         })
     }
     else if (member[1].checked){
-
+        const denomination = document.getElementsByName('denomination')
         yesShow.forEach(yes => {
             yes.classList.remove('show')
             yes.classList.add('hidden')
@@ -374,6 +376,8 @@ selection.addEventListener('click', (e) => {
             no.classList.remove('hidden')
             no.classList.add('show')
         });
+        console.log(denomination[0])
+        denomination[0].setAttribute('required', 'true')
     }
 })
 

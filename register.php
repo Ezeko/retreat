@@ -43,8 +43,8 @@
             </div>
             <div class="yes hidden">
                 <label for="district">Your Group of District<b>*</b></label>
-                <select name="district" id="district" required>
-                    <option value="none">Not Applicable</option>
+                <select name="district" id="district">
+                    <option value="">Select Your Group of District</option>
                     <option value="CENTRAL">CENTRAL GROUP</option>
                     <option value="CAMPSITE">CAMPSITE GROUP</option>
                     <option value="EBENEZER">EBENEZER GROUP</option>
@@ -61,13 +61,13 @@
             <div class="yes hidden">
                 <label for="location">Your District Location<b>*</b></label>
                 <!-- <input type="text" id="location" placeholder="Your District Location put none if not a member" value="none" name="location" required /> -->
-                <select name="location" id="location" required>
+                <select name="location" id="location">
                     <option value="">Choose your church</option>
                 </select>
             </div>
             <div class="no hidden">
                 <label for="denomination">Your Denomination<b>*</b></label>
-                <input type="text" placeholder="Your Denomination put DLBC if a member" value="DLBC" name="denomination" required />
+                <input type="text" placeholder="Your Denomination put e.g C.A.C ..." name="denomination" />
             </div>
             <div id="genderSelection">
                 <label for="gender">Gender<b>*</b></label>
@@ -99,7 +99,7 @@
 
             
         </form>
-        <script src="./js/register.js"></script>
+        <script src="./js/reg.js"></script>
     
     </body>
 </html>
