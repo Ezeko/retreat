@@ -99,7 +99,7 @@
 
             
         </form>
-        <script src="./js/reg.js"></script>
+        <script src="./js/register.js"></script>
     
     </body>
 </html>
