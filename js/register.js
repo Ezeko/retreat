@@ -1,9 +1,12 @@
 const member = document.getElementsByName('member')
 const yesShow = document.querySelectorAll('.yes')
 const noHide = document.querySelectorAll('.no')
+const location = document.querySelector('#location')
+
+console.log(location)
 
 
-console.log(yesShow)
+//console.log(yesShow)
 const selection = document.querySelector('#memberSelection')
 
 selection.addEventListener('click', (e) => {
@@ -34,3 +37,4 @@ selection.addEventListener('click', (e) => {
         });
     }
 })
+

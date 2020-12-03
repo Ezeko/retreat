@@ -15,7 +15,7 @@
     <body>
         <form action="backend/reg_validate.php" method="POST">
                     <img src='https://res.cloudinary.com/ezeko/image/upload/v1574728286/images/dlcm_logo_tyrhka.jpg'>
-                    <h1>Welcome to Deeper Life <?php echo (date('Y')) ?> December Retreat Ore Region</h1>
+                    <h1>Welcome to Deeper Life 2020 December Retreat Ore Region</h1>
             <h2>Do not hesitate to fill the below Spaces correctly</h2>
             <h5  id="gbu" class="blinking">God bless you!!!!!</h5>
             <div id="form">
@@ -43,11 +43,27 @@
             </div>
             <div class="yes hidden">
                 <label for="district">Your Group of District<b>*</b></label>
-                <input type="text" placeholder="Your Group of District put none if not a member" name="district" value = 'none' required />
+                <select name="district" id="district" required>
+                    <option value="none">Not Applicable</option>
+                    <option value="CENTRAL">CENTRAL GROUP</option>
+                    <option value="CAMPSITE">CAMPSITE GROUP</option>
+                    <option value="EBENEZER">EBENEZER GROUP</option>
+                    <option value="IDIMANGO">IDIMANGO GROUP</option>
+                    <option value="IBUKUN-OLUWA"> IBUKUN-OLUWA GROUP</option>
+                    <option value="LAGOS-EXPRESS">LAGOS-EXPRESS GROUP </option>
+                    <option value="LANGUAGE">LANGUAGE GROUP</option>
+                    <option value="OMI-AYO">	OMI-AYO GROUP </option>
+                    <option value="POWERLINE"> POWERLINE GROUP</option>
+                    <option value="YORUBA">YORUBA GROUP</option>
+                    <option value="OTHERS"> OUTSIDE LOCATION (GROUP)</option>
+                </select>
             </div>
             <div class="yes hidden">
                 <label for="location">Your District Location<b>*</b></label>
-                <input type="text" id="location" placeholder="Your District Location put none if not a member" value="none" name="location" required />
+                <!-- <input type="text" id="location" placeholder="Your District Location put none if not a member" value="none" name="location" required /> -->
+                <select name="location" id="location" required>
+                    <option value="">Choose your church</option>
+                </select>
             </div>
             <div class="no hidden">
                 <label for="denomination">Your Denomination<b>*</b></label>
@@ -83,7 +99,7 @@
 
             
         </form>
-        <script src="./js/register.js"></script>
+        <script src="./js/reg.js"></script>
     
     </body>
 </html>
