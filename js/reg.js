@@ -10,7 +10,7 @@ const district = document.querySelector('#district')
 //console.log(yesShow)
 const selection = document.querySelector('#memberSelection')
 
-selection.addEventListener('click', (e) => {
+selection.addEventListener('change', (e) => {
     e.preventDefault()
     // console.log('working')
     // console.log(member[0].checked)
@@ -248,7 +248,7 @@ selection.addEventListener('click', (e) => {
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
-                opt.innerHTML = 'Ibukun Oluwa Church'
+                opt.innerHTML = 'Ibukun Oluwa 3 Church'
                 opt.setAttribute('value', 'Ibukun-Oluwa 3')
                 loc.appendChild(opt)
 
@@ -376,7 +376,7 @@ selection.addEventListener('click', (e) => {
             no.classList.remove('hidden')
             no.classList.add('show')
         });
-        console.log(denomination[0])
+        // console.log(denomination[0])
         denomination[0].setAttribute('required', 'true')
     }
 })
