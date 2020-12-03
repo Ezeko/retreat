@@ -65,7 +65,7 @@ a:hover{
     background-color: blue;
 }
 a.active{
-    background-color: rgb(7, 177, 30);
+    background-color: rgb(142, 145, 142);
 }
 #main{
     grid-area: main;
@@ -84,7 +84,7 @@ a.active{
     width:100%;
     font-size:30px;
     text-align: center;
-    color: navy;
+    color: rgb(189, 189, 192);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }

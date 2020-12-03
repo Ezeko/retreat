@@ -18,7 +18,11 @@ h5{
 
 .blinking{
     animation: blinkingText 0.8s infinite;
+    
 
+}
+#gbu{
+    color: rgb(3, 18, 31);
 }
 
 @keyframes blinkingText{

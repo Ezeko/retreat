@@ -14,7 +14,7 @@ require_once('../config/connect.php');// call connection
 </style>
 </head>
 <body>
-    <h2 class="w3-center w3-text-big w3-text-purple">DEEPER CHRISTIAN LIFE MINISTRY, DLCF  ORE REGION DECEMBER 2019</h2>
+    <h2 class="w3-center w3-text-big w3-text-purple">DEEPER CHRISTIAN LIFE MINISTRY, DLCF  ORE REGION DECEMBER <?php echo (date('Y'))?></h2>
 <h3 class="w3-center w3-text-big w3-text-green">  PARTICIPANTS DETAILS </h3>
 <div style="overflow-x:auto;">
 <div style = "overflow-y:auto">

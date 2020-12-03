@@ -27,7 +27,7 @@ $result = mysqli_num_rows($query_check);
 if ($result > 0){
     
 // If the details already exists, with an error message will be displayed.
-echo  "<script>alert('Participant Already Registered!!!'); window.location.replace('../register.html');</script>";
+echo  "<script>alert('Participant Already Registered!!!'); window.location.replace('../register');</script>";
 }else{
 
     switch($category){
@@ -66,7 +66,7 @@ echo  "<script>alert('Participant Already Registered!!!'); window.location.repla
     $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
     if ($query){
-        echo  "<script>alert('Participant Registered Successfully.!!!'); window.location.replace('../index.html');</script>";
+        echo  "<script>alert('Participant Registered Successfully.!!!'); window.location.replace('../index');</script>";
 
     }
 }

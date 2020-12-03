@@ -15,9 +15,9 @@
     <body>
         <form action="backend/reg_validate.php" method="POST">
                     <img src='https://res.cloudinary.com/ezeko/image/upload/v1574728286/images/dlcm_logo_tyrhka.jpg'>
-                    <h1>Welcome to Deeper Life 2019 December Retreat Ore Region</h1>
-            <h2>Do not hesistate to fill the below Spaces correctly</h2>
-            <h5 class="blinking">God bless you!!!!!</h5>
+                    <h1>Welcome to Deeper Life <?php echo (date('Y')) ?> December Retreat Ore Region</h1>
+            <h2>Do not hesitate to fill the below Spaces correctly</h2>
+            <h5  id="gbu" class="blinking">God bless you!!!!!</h5>
             <div id="form">
             <div>
                 <label for="name">Your Surname<b>*</b></label>
@@ -41,17 +41,17 @@
                 YES<input type="radio" name="member" value="yes" required>
                 NO<input type="radio" name="member" value="no" required>
             </div>
-            <div class="yes show">
+            <div class="yes hidden">
                 <label for="district">Your Group of District<b>*</b></label>
-                <input type="text" placeholder="Your Group of District put none if not a member" name="district" required />
+                <input type="text" placeholder="Your Group of District put none if not a member" name="district" value = 'none' required />
             </div>
-            <div class="yes show">
+            <div class="yes hidden">
                 <label for="location">Your District Location<b>*</b></label>
-                <input type="text" id="location" placeholder="Your District Location put none if not a member" name="location" required />
+                <input type="text" id="location" placeholder="Your District Location put none if not a member" value="none" name="location" required />
             </div>
-            <div class="no show">
+            <div class="no hidden">
                 <label for="denomination">Your Denomination<b>*</b></label>
-                <input type="text" placeholder="Your Denomination put DLBC if a member" name="denomination" required />
+                <input type="text" placeholder="Your Denomination put DLBC if a member" value="DLBC" name="denomination" required />
             </div>
             <div id="genderSelection">
                 <label for="gender">Gender<b>*</b></label>
@@ -83,6 +83,7 @@
 
             
         </form>
-        <script src="./js/member.js"></script>
+        <script src="./js/register.js"></script>
+    
     </body>
 </html>
