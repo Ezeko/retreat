@@ -9,9 +9,9 @@
     <title>DLDR | Home</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta name="description"
-        content="responsive landing page, made by adejobi ezekiel, responsive landing page template, made in nigeria">
+        content="Deeper life Bible church Ore Region Retreat registration responsive landing page, made by adejobi ezekiel, made in nigeria">
     <meta name="keyword" content="Ezekielcodes, responsive web form, 100days of coding, Adejobi Ezekiel, Ezekoconcept, ezeko, FreeCodeCamp-Ezeko,
-             html5, html, php developer, css template, landing page, landing page template">
+             html5, html, php developer, css template, landing page, landing page template, deeper , deeper life, ore ">
 
     <link rel="stylesheet" type="text/css" href="./css/index_style.css">
 
@@ -34,12 +34,12 @@
             <div id="about">
                 <h1 id="about-h1" class="blinking">WELCOME TO DEEPER LIFE NATIONAL DECEMBER RETREAT!</h1>
                 <img width="100%" height="500px"
-                    src="https://res.cloudinary.com/ezeko/image/upload/v1575449121/images/WhatsApp_Image_2019-11-26_at_11.48.05_AM_zzprc7.jpg"
+                    src="https://res.cloudinary.com/ezeko/image/upload/v1607012283/images/e93699b1-4f2d-4b52-8c74-6106c593cc4d_rsa1rq.jpg"
                     alt="Retreat banner">
             </div>
         </div>
         <div id="footer">
-            <p> &copy Ezekielcodes 2019 - <?php echo(date('Y')) ?></p>
+            <p> &copy <a href='https://github.com/Ezeko'>Ezekielcodes</a> 2019 - <?php echo(date('Y')) ?></p>
         </div>
     </div>
 </body>

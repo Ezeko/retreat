@@ -10,7 +10,7 @@
 }
 p{
     text-align: center;
-    color: darkblue;
+    color: rgb(240, 240, 243);
     font-size: 25px;
     text-transform: uppercase;
     font-style: oblique;
@@ -75,7 +75,7 @@ a.active{
 
 }
 #footer{
-    background-color: rgba(22, 139, 6, 0.671);
+    background-color: rgba(4, 17, 2, 0.671);
     grid-area: footer;
 
 }
