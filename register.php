@@ -75,13 +75,19 @@
                 female<input type="radio" name="gender" value="female" required>
             </div>
             <div>
-                <select name="category" id="category">
-                    <option name="category" id="category" value='none' >Select Category</option>
+                <select name="category" id="category" required>
+                    <option name="category" value='' >Select Category</option>
                     <option name="category" id="category" value="children">Children</option>
                     <option name="category" id="category" value="youth"  >Youth</option>
                     <option name="category" id="category" value="campus"  >Campus</option>
                     <option name="category" id="category" value="adult"  >Adult</option>
                 </select>
+            </div>
+            <div class="hidden" id="school-div">
+                <label for="school">Your Institution<b>*</b></label>
+            </div>
+            <div class="hidden" id="level">
+                <label for="level">Your Level<b>*</b></label>
             </div>
             <div id="ageSelection">
                 <label for="age">Choose Your Age Range<b>*</b></label>
@@ -93,6 +99,10 @@
                 40 & above<input type="radio" name="age" value="40&above" required>
 
             </div>
+            <div >
+                <label for="prayer">Prayer Request<b>*</b></label>
+                <input type="text" placeholder="What do you want God to do for you on during this retreat?" name="prayer" />
+            </div>
 
             <input type="submit" value="REGISTER" />
             </div>
@@ -100,6 +110,7 @@
             
         </form>
         <script src="./js/reg.js"></script>
+        <script src="./js/campus.js"></script>
     
     </body>
 </html>
