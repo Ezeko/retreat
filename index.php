@@ -14,22 +14,25 @@
              html5, html, php developer, css template, landing page, landing page template, deeper , deeper life, ore ">
 
     <link rel="stylesheet" type="text/css" href="./css/index_style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 </head>
 
 <body>
+<nav>
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo"><img src='https://res.cloudinary.com/ezeko/image/upload/v1574728286/images/dlcm_logo_tyrhka.jpg'
+                id="header-img"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="./register" class="nav-link"> Register</a></li>
+      </ul>
+    </div>
+  </nav>
     <div class="container">
-        <div id="header">
-            <img src='https://res.cloudinary.com/ezeko/image/upload/v1574728286/images/dlcm_logo_tyrhka.jpg'
-                id="header-img">
-            <nav id="nav-bar">
-                <a href="#" class="active nav-link">Home</a>
-                <a href="./register" class="nav-link"> Register</a>
-
-
-            </nav>
-            </nav>
-        </div>
+    
         <div id="main">
             <div id="about">
                 <h1 id="about-h1" class="blinking">WELCOME TO DEEPER LIFE NATIONAL DECEMBER RETREAT!</h1>
@@ -39,7 +42,7 @@
             </div>
         </div>
         <div id="footer">
-            <p> &copy <a href='https://github.com/Ezeko'>Ezekielcodes</a> 2019 - <?php echo(date('Y')) ?></p>
+            <p> &copy <a href='https://api.whatsapp.com/send?phone=2347068006837'>Ezekielcodes</a> 2019 - <?php echo(date('Y')) ?></p>
         </div>
     </div>
 </body>

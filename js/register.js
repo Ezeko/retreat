@@ -364,6 +364,10 @@ selection.addEventListener('change', (e) => {
                 opt.setAttribute('value', 'Costain')
                 loc.appendChild(opt)
             }
+            // //add label
+            // label = document.createElement('label');
+            // label.innerHTML = "Your Level<b>*</b>"
+            // loc.appendChild(label)
         })
     }
     else if (member[1].checked){

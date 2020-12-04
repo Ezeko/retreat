@@ -15,7 +15,6 @@ $denomination = filter_input(INPUT_POST, 'denomination', FILTER_SANITIZE_ENCODED
 $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_ENCODED);
 $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
 
-
 //check if user has been registered before
 
 $check = "SELECT * FROM `participants` WHERE surname = '$surname' AND otherName= '$otherNames' AND H_address='$address' AND phonenumber='$phonenumber' AND isMember= '$isMember' AND district = '$group' 

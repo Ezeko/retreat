@@ -31,6 +31,7 @@ selection.addEventListener('change', (e) => {
         district.addEventListener('change', (e) => {
             e.preventDefault()
             const locOptions = document.querySelectorAll('#location option')
+            console.log(locOptions)
             // console.log(district.value)
             if (district.value == 'CENTRAL'){
                 //first remove all children
@@ -43,12 +44,12 @@ selection.addEventListener('change', (e) => {
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'OluwaFemi 1 Church'
-                opt.setAttribute('value', 'Oluwa-Femi 1')
+                opt.setAttribute('value', 'Oluwa-Femi1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'OluwaFemi 2 Church'
-                opt.setAttribute('value', 'Oluwa-Femi 2')
+                opt.setAttribute('value', 'Oluwa-Femi2')
                 loc.appendChild(opt)
             } else if (district.value == 'CAMPSITE'){
                 //first remove all children
@@ -71,7 +72,7 @@ selection.addEventListener('change', (e) => {
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Olotito 1 Church'
-                opt.setAttribute('value', 'Olotito 1')
+                opt.setAttribute('value', 'Olotito1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -126,7 +127,7 @@ selection.addEventListener('change', (e) => {
                 locOptions.forEach(n => n.remove())
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Osooro 1 Church'
-                opt.setAttribute('value', 'Osooro 1')
+                opt.setAttribute('value', 'Osooro1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -164,12 +165,12 @@ selection.addEventListener('change', (e) => {
                 locOptions.forEach(n => n.remove())
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Idimango 1 Church'
-                opt.setAttribute('value', 'Idimango 1')
+                opt.setAttribute('value', 'Idimango1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Idimango 2 Church'
-                opt.setAttribute('value', 'Idimango 2')
+                opt.setAttribute('value', 'Idimango2')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -187,12 +188,12 @@ selection.addEventListener('change', (e) => {
                 locOptions.forEach(n => n.remove())
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Igbo Central/ Hausa Church'
-                opt.setAttribute('value', 'Igbo Central/Hausa')
+                opt.setAttribute('value', 'IgboCentral/Hausa')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Igbo Express Church'
-                opt.setAttribute('value', 'Igbo Express')
+                opt.setAttribute('value', 'IgboExpress')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -239,17 +240,17 @@ selection.addEventListener('change', (e) => {
                 locOptions.forEach(n => n.remove())
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Ibukun Oluwa 1 Church'
-                opt.setAttribute('value', 'Ibukun-Oluwa 1')
+                opt.setAttribute('value', 'Ibukun-Oluwa1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Ibukun Oluwa 2 Church'
-                opt.setAttribute('value', 'Ibukun-Oluwa 2')
+                opt.setAttribute('value', 'Ibukun-Oluwa2')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Ibukun Oluwa 3 Church'
-                opt.setAttribute('value', 'Ibukun-Oluwa 3')
+                opt.setAttribute('value', 'Ibukun-Oluwa3')
                 loc.appendChild(opt)
 
             } else if (district.value == 'YORUBA'){
@@ -364,6 +365,10 @@ selection.addEventListener('change', (e) => {
                 opt.setAttribute('value', 'Costain')
                 loc.appendChild(opt)
             }
+            // //add label
+            // label = document.createElement('label');
+            // label.innerHTML = "Your Level<b>*</b>"
+            // loc.appendChild(label)
         })
     }
     else if (member[1].checked){

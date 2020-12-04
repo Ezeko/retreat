@@ -1,133 +1,191 @@
-body{
+body {
     width: 98%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     background-color: rgb(236, 235, 235);
 }
-h1{
+input, select, textarea{
+    color: #ff0000;
+}
+h1 {
     color: cadetblue;
 }
-b{
+
+b {
     color: crimson;
 }
-h5{
+
+h5 {
     color: cyan;
-    
+
 }
 
-.blinking{
+.blinking {
     animation: blinkingText 0.8s infinite;
-    
+
 
 }
-#gbu{
+
+#gbu {
     color: rgb(3, 18, 31);
 }
 
-@keyframes blinkingText{
-    0%{ transform: none;
-    
+@keyframes blinkingText {
+    0% {
+        transform: none;
+
     }
-    49%{ transform: 1.49;
-    color: transparent;
-    }
-    50%{ transform:1.5;
+
+    49% {
+        transform: 1.49;
         color: transparent;
     }
-    70%{transform: 1.7;
+    50% {
+        transform: 1.5;
         color: transparent;
     }
-    90%{transform: 1.9;
+
+    70% {
+        transform: 1.7;
         color: transparent;
-    
     }
-    100%{transform: 2;
-        
+
+    90% {
+        transform: 1.9;
+        color: transparent;
+
+    }
+
+    100% {
+        transform: 2;
+
     }
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.show{
+
+.show {
     display: block;
 }
-select{
+
+select {
     width: 60%;
     height: 20%;
     align-content: center;
     font-size: x-large;
 }
-#form{
+
+#form {
     margin-bottom: 10%;
-    
-    box-shadow: 4px 10px 20px rgba(0,0,0,0.19), 4px 6px 6px rgba(0,0,0,0.23);
-    background-color: black;
+
+    box-shadow: 4px 10px 20px rgba(128, 124, 124, 0.19), 4px 6px 6px rgba(250, 248, 248, 0.23);
+    background-color: rgb(129, 128, 128);
     color: white;
     /*color: rgba(81, 17, 184, 0.925);*/
 }
-#form>div{
-    width: 90%;
-    font-size: xx-large;
+select{
+    color: black;
 }
-input[type='text']{
-    
+
+form{
+    background-color:rgb(131, 128, 128);
+}
+
+#form>div {
+    width: 90%;
+    font-size: large;
+}
+
+input[type='text'] {
+
     width: 60%;
 }
-input[type='tel'], input[name='district'], input[name='Location'], input[name='denomination']{
+
+input[type='tel'],
+input[name='district'],
+input[name='Location'],
+input[name='denomination'] {
     width: 60%;
 
 }
-input[name='district'], input[name='location'], input[name='denomination']{
-    font-size: x-large;
+
+input[name='district'],
+input[name='location'],
+input[name='denomination'] {
+    font-size: large;
 }
-input[type='submit']{
+
+input[type='submit'] {
     margin-top: 5%;
     background-color: yellowgreen;
 }
-input{
-    font-size: x-large;
+
+input {
+    font-size: large;
     margin-bottom: 15%;
+    color: aliceblue;
 }
-div{
+
+div {
     margin-bottom: 5%;
 }
-@media (max-width:500px){
-    label{
-        width:100%;
+
+@media (max-width:500px) {
+    label {
+        width: 100%;
     }
-    input{
+
+    input {
         border: none;
         width: 100%;
     }
 }
-@media (min-width:720px){
-    input{
+
+@media (min-width:720px) {
+    input {
         font-size: xx-large;
         margin-bottom: 1%;
     }
-    body{
+
+    body {
         width: 95%;
     }
-    #form{
+
+    #form {
         padding: 8%;
     }
-    #form>div{
+
+    #form>div {
         width: 100%;
     }
-    input[type='text']{
+
+    input[type='text'] {
         width: 50%;
     }
-    label[for='number'], label[for='district'], label[for='Location'], label[for='denomination'], label[for='gender'], label{
+
+    label[for='number'],
+    label[for='district'],
+    label[for='Location'],
+    label[for='denomination'],
+    label[for='gender'],
+    label {
         float: left;
     }
-    input[type='tel'], input[name='district'], input[name='denomination'], input[name='location']{
+
+    input[type='tel'],
+    input[name='district'],
+    input[name='denomination'],
+    input[name='location'] {
         width: 50%;
-    
+
     }
+
     /**input[name='location']{
         width:30%;
     }**/
-    
+
 
 }

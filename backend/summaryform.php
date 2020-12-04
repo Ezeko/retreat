@@ -17,7 +17,7 @@ require_once('../config/connect.php');// call connection
     <h2 class="w3-center w3-text-big w3-text-purple">DEEPER CHRISTIAN LIFE MINISTRY, DLCF ORE REGION DECEMBER 2020 </h2>
 <h3 class="w3-center w3-text-big w3-text-green">  REGISTRATION SUMMARY FORM</h3>
 <div style="overflow-x:auto;">
-c
+
 <table class="w3-table-all w3-hoverable">
     <thead>
       <tr class="w3-pink">
@@ -113,7 +113,7 @@ c
         <td><strong>II</strong></td>
         <td>Oluwa-Femi 1 </td>
         <td>
-            <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi 1' AND gender='male'";
+            <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi1' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -125,7 +125,7 @@ c
         
         ?>
         </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi 1' AND gender='female'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi1' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -136,7 +136,7 @@ c
         
         
         ?></td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi 1'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi1'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -151,7 +151,7 @@ c
     <tr class="w3-hover-blue">
         <td><strong>III</strong></td>
         <td>Oluwa-Femi 2 </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE district='Oluwa-Femi 2' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE district='Oluwa-Femi2' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -162,7 +162,7 @@ c
         
         
         ?></td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi 2' AND gender='female'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi2' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -173,7 +173,7 @@ c
         
         
         ?></td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi 2'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Oluwa-Femi2'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -299,8 +299,8 @@ c
     </tr>
     <tr class="w3-hover-blue">
         <td><strong>III</strong></td>
-        <td>Olotito 1 </td>
-        <td> <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Olotito 1' AND gender='male'";
+        <td>Olotito1 </td>
+        <td> <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Olotito1' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -310,7 +310,7 @@ c
          }
         
         
-        ?></td><td> <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Olotito 1' AND gender='female'";
+        ?></td><td> <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Olotito1' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -320,7 +320,7 @@ c
          }
         
         
-        ?></td><td> <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Olotito 1' ";
+        ?></td><td> <?php $sql= "SELECT gender FROM `campus` WHERE C_location='Olotito1' ";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -759,7 +759,7 @@ c
         <tr class="w3-hover-blue">
             <td><strong>I</strong></td>
             <td>Osooro 1 </td>
-            <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro 1' AND gender='male'";
+            <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro1' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -769,7 +769,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro 1' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro1' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -779,7 +779,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro 1'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro1'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -794,7 +794,7 @@ c
         <tr class="w3-hover-blue">
         <td><strong>II</strong></td>
         <td>Osooro 2 </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro 2' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro2' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -804,7 +804,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro 2' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro2' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -814,7 +814,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro 2'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Osooro2'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1039,7 +1039,7 @@ c
     <tr class="w3-hover-blue">
         <td><strong>I</strong></td>
         <td>Idimango 1 </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango 1' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango1' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1049,7 +1049,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango 1' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango1' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1059,7 +1059,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango 1' ";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango1' ";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1074,7 +1074,7 @@ c
     <tr class="w3-hover-blue">
         <td><strong>II</strong></td>
         <td>Idimango 2 </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango 2' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango2' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1084,7 +1084,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango 2' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango2' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1094,7 +1094,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango 2' ";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Idimango2' ";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1214,7 +1214,7 @@ c
     <tr class="w3-hover-blue">
         <td><strong>I</strong></td>
         <td>Igbo Central/Hausa </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Igbo Central/Hausa' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='IgboCentral/Hausa' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1224,7 +1224,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Igbo Central/Hausa' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='IgboCentral/Hausa' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1234,7 +1234,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Igbo Central/Hausa' ";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='IgboCentral/Hausa' ";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1249,7 +1249,7 @@ c
     <tr class="w3-hover-blue">
         <td><strong>II</strong></td>
         <td>Igbo Express </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Igbo Express' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='IgboExpress' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1259,7 +1259,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Igbo Express' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='IgboExpress' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1269,7 +1269,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Igbo Express'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='IgboExpress'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1599,7 +1599,7 @@ c
         <tr class="w3-hover-blue">
         <td><strong>I</strong></td>
         <td>Ibukun-Oluwa 1 </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 1' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa1' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1609,7 +1609,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukub-Oluwa 1' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukub-Oluwa1' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1619,7 +1619,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 1'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa1'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1634,7 +1634,7 @@ c
         <tr class="w3-hover-blue">
         <td><strong>II</strong></td>
         <td>Ibukun-Oluwa 2 </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 2' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa2' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1644,7 +1644,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 2' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa2' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1654,7 +1654,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 2' ";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa2' ";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1669,7 +1669,7 @@ c
     <tr class="w3-hover-blue">
         <td><strong>III</strong></td>
         <td>Ibukun-Oluwa 3 </td>
-        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 3' AND gender='male'";
+        <td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa3' AND gender='male'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1679,7 +1679,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 3' AND gender='female'";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa3' AND gender='female'";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
@@ -1689,7 +1689,7 @@ c
          }
         
         
-        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa 3' ";
+        ?></td><td><?php $sql= "SELECT gender FROM `campus` WHERE C_location='Ibukun-Oluwa3' ";
          $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
          $count = mysqli_num_rows($query);
          if($count <= 0){
