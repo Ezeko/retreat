@@ -22,7 +22,7 @@ $faculty_department ;
 //check if user has been registered before
 
 $check = "SELECT * FROM `participants` WHERE surname = '$surname' AND otherName= '$otherNames' AND H_address='$address' AND phonenumber='$phonenumber' AND isMember= '$isMember' AND district = '$group' 
-AND C_location = '$location' AND gender = '$gender' AND denomination = '$denomination' AND section = '$category' AND age = '$age' AND institution = '$school' AND faculty_department = '$faculty_department' AND currentLevel = '$level' AND prayer_request = '$prayer_request'";
+AND C_location = '$location' AND gender = '$gender' AND denomination = '$denomination' AND section = '$category' AND age = '$age' AND institution = '$institution' AND faculty_department = '$faculty_department' AND currentLevel = '$level' AND prayer_request = '$prayer_request'";
 
 $query_check = mysqli_query($conn, $check) or die(mysqli_error($conn));
 
@@ -50,9 +50,9 @@ echo  "<script>alert('Participant Already Registered!!!'); window.location.repla
         $query = mysqli_query($conn, $sql) or die(mysqli_error($conn)); break;
 
         case("campus"): 
-        $sql = "INSERT INTO `campus` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section, institution, faculty_department, currentLevel, prayer_request) 
+        $sql = "INSERT INTO `campus` (surname, otherName, H_address, phonenumber, isMember, district, prayer_request, C_location, denomination, gender, institution, faculty_department, currentLevel, age, section ) 
         VALUES 
-        ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category', '$school','$faculty_department', '$level', '$prayer_request')";
+        ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$prayer_request', '$location', '$denomination', '$gender', '$institution', '$faculty_department', '$level', '$age', '$category' )";
         $query = mysqli_query($conn, $sql) or die(mysqli_error($conn)); break;
 
         default:echo  "<script>alert('Cannot Register as Children!!! Kindly choose Campus in the category'); window.location.replace('../register');</script>";
@@ -62,17 +62,16 @@ echo  "<script>alert('Participant Already Registered!!!'); window.location.repla
         ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
     
         $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
-        continue;
+        break;
     
     
     } 
 
 
 
-    $sql = "INSERT INTO `participants` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
-    VALUES 
-    ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
-
+    $sql = "INSERT INTO `participants` (surname, otherName, H_address, phonenumber, isMember, district, prayer_request, C_location, denomination, gender, institution, faculty_department, currentLevel, age, section ) 
+        VALUES 
+        ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$prayer_request', '$location', '$denomination', '$gender', '$institution', '$faculty_department', '$level', '$age', '$category' )";
     $query = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
     if ($query){
