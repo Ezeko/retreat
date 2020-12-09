@@ -1,5 +1,6 @@
 const category = document.querySelector('#category')
 const school = document.querySelector('#school-div')
+const departmentDiv = document.querySelector('#department-div')
 const level = document.querySelector('#level')
 const sel_level = document.getElementsByName('level')[0]
 // console.log(category)
@@ -16,6 +17,15 @@ category.addEventListener('change', (e) => {
         institution.classList.add('form-control')
         school.appendChild(institution)
 
+        const dept = document.createElement('input')
+        dept.setAttribute('name', 'dept')
+        dept.setAttribute('type', 'text')
+        dept.setAttribute('required', 'true')
+        dept.setAttribute('placeholder', 'Your Department?')
+        dept.classList.add('form-control')
+        departmentDiv.appendChild(dept)
+
+
 
         //add required to level
         sel_level.setAttribute('required', 'true')
@@ -31,18 +41,22 @@ category.addEventListener('change', (e) => {
         // level.appendChild(label)
 
         school.classList.remove('hidden')
-
+        departmentDiv.classList.remove('hidden')
         level.classList.remove('hidden')
+
 
     } else {
         //remove inputs if its present
         document.getElementsByName('school')[0]?.remove()
         //remove select options
         document.getElementsByName('level')[0]?.remove()
+        //remove department
+        document.getElementsByName('dept')[0]?.remove()
 
 
         school.classList.add('hidden') //hide school-div
 
         level.classList.add('hidden') //hide level-div
+        departmentDiv.classList.add('hidden')
     }
 })

@@ -17,7 +17,7 @@ $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
 $prayer_request = filter_input(INPUT_POST, 'prayer', FILTER_SANITIZE_SPECIAL_CHARS);
 $institution = filter_input(INPUT_POST, 'school', FILTER_SANITIZE_SPECIAL_CHARS);
 $level = filter_input(INPUT_POST, 'level', FILTER_SANITIZE_SPECIAL_CHARS);
-$faculty_department ;
+$faculty_department = filter_input(INPUT_POST, 'dept', FILTER_SANITIZE_SPECIAL_CHARS);
 
 //check if user has been registered before
 

@@ -129,6 +129,9 @@
             <div class="hidden form-group" id="school-div">
                 <label for="school">Your Institution<b>*</b></label>
             </div>
+            <div class="hidden form-group" id="department-div">
+                <label for="department">Your Department<b>*</b></label>
+            </div>
             <div class="hidden form-group" id="level">
                 <label>Your Level<b>*</b></label>
                 <select name="level" class="form-control">
