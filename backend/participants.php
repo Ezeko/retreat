@@ -16,13 +16,14 @@ require_once('../config/connect.php');// call connection
 <style>
 </style>
 </head>
-<body>
+<body >
     <h2 class="w3-center w3-text-big w3-text-purple">DEEPER CHRISTIAN LIFE MINISTRY, DLCF  ORE REGION DECEMBER 2020</h2>
 <h3 class="w3-center w3-text-big w3-text-green">  PARTICIPANTS DETAILS </h3>
-<div style="overflow-x:auto;">
-<div style = "overflow-y:auto">
+<div style="overflow-x:auto;" >
+<div style = "overflow-y:auto" >
 
-<table class="w3-table-all w3-hoverable" id="summaryTable">
+
+<table class="w3-table-all w3-hoverable " id="summaryTable">
     <thead>
       <tr class="w3-pink">
         <th>S/N</th>
@@ -71,11 +72,18 @@ require_once('../config/connect.php');// call connection
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function() {
-    $('#summaryTable').DataTable();
+    $('#summaryTable').DataTable({
+            dom: 'Bfrtip',
+        buttons: [
+            'print'
+        ]
+    });
 } );
 </script>
 </body>
