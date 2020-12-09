@@ -17,6 +17,7 @@ require_once('../config/connect.php');// call connection
 #table{
 padding-right: 1%;
 padding-left: 1%;
+}
 </style>
 </head>
 <body >
