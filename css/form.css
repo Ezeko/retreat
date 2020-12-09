@@ -1,0 +1,65 @@
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+form{
+    background-color:rgb(10, 1, 1);
+    color: azure;
+
+    padding: 6% 0% 5% 0%;
+}
+input[type='submit'] {
+    margin-top: 5%;
+    background-color: yellowgreen;
+}
+b {
+    color: rgb(250, 52, 92);
+}
+.blinking {
+    animation: blinkingText 0.8s infinite;
+
+
+}
+@keyframes blinkingText {
+    0% {
+        transform: none;
+
+    }
+
+    49% {
+        transform: 1.49;
+        color: transparent;
+    }
+    50% {
+        transform: 1.5;
+        color: transparent;
+    }
+
+    70% {
+        transform: 1.7;
+        color: transparent;
+    }
+
+    90% {
+        transform: 1.9;
+        color: transparent;
+
+    }
+
+    100% {
+        transform: 2;
+
+    }
+}
+.span{
+    text-align: center;
+}
+img{
+    padding-top: 3%;
+    width: 10%;
+    position: relative;
+    left: 40%;
+    padding-bottom: 3%;
+}

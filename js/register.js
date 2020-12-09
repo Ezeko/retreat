@@ -31,11 +31,24 @@ selection.addEventListener('change', (e) => {
         district.addEventListener('change', (e) => {
             e.preventDefault()
             const locOptions = document.querySelectorAll('#location option')
+            const location_div = document.querySelector('#location-div ul')
+            const location_li = document.querySelectorAll('#location-div ul li')
+            // console.log(locOptions)
             // console.log(district.value)
             if (district.value == 'CENTRAL'){
                 //first remove all children
-                // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                console.log('location_div', location_div.id  + 1 + 1)
+                //remove all li
+                location_li.forEach(li => {
+                    console.log(li)
+                })
+
+                locOptions.forEach(n => {
+                    // console.log(n)
+                    n.classList.add('hide')
+                    n.remove()
+                });
+
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Central Church'
                 opt.setAttribute('value', 'Central')
@@ -43,17 +56,20 @@ selection.addEventListener('change', (e) => {
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'OluwaFemi 1 Church'
-                opt.setAttribute('value', 'Oluwa-Femi 1')
+                opt.setAttribute('value', 'Oluwa-Femi1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'OluwaFemi 2 Church'
-                opt.setAttribute('value', 'Oluwa-Femi 2')
+                opt.setAttribute('value', 'Oluwa-Femi2')
                 loc.appendChild(opt)
             } else if (district.value == 'CAMPSITE'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Campsite Church'
                 opt.setAttribute('value', 'Campsite')
@@ -71,7 +87,7 @@ selection.addEventListener('change', (e) => {
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Olotito 1 Church'
-                opt.setAttribute('value', 'Olotito 1')
+                opt.setAttribute('value', 'Olotito1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -81,7 +97,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'EBENEZER'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Courage Church'
                 opt.setAttribute('value', 'Courage')
@@ -104,7 +123,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'POWERLINE'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Mission Church'
                 opt.setAttribute('value', 'Mission')
@@ -123,10 +145,13 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'LAGOS-EXPRESS'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Osooro 1 Church'
-                opt.setAttribute('value', 'Osooro 1')
+                opt.setAttribute('value', 'Osooro1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -161,15 +186,18 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'IDIMANGO'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Idimango 1 Church'
-                opt.setAttribute('value', 'Idimango 1')
+                opt.setAttribute('value', 'Idimango1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Idimango 2 Church'
-                opt.setAttribute('value', 'Idimango 2')
+                opt.setAttribute('value', 'Idimango2')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -184,15 +212,18 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'LANGUAGE'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Igbo Central/ Hausa Church'
-                opt.setAttribute('value', 'Igbo Central/Hausa')
+                opt.setAttribute('value', 'IgboCentral/Hausa')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Igbo Express Church'
-                opt.setAttribute('value', 'Igbo Express')
+                opt.setAttribute('value', 'IgboExpress')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
@@ -217,7 +248,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'OMI-AYO'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Omi Ayo Church'
                 opt.setAttribute('value', 'Omi-Ayo')
@@ -236,26 +270,32 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'IBUKUN-OLUWA'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Ibukun Oluwa 1 Church'
-                opt.setAttribute('value', 'Ibukun-Oluwa 1')
+                opt.setAttribute('value', 'Ibukun-Oluwa1')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Ibukun Oluwa 2 Church'
-                opt.setAttribute('value', 'Ibukun-Oluwa 2')
+                opt.setAttribute('value', 'Ibukun-Oluwa2')
                 loc.appendChild(opt)
 
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Ibukun Oluwa 3 Church'
-                opt.setAttribute('value', 'Ibukun-Oluwa 3')
+                opt.setAttribute('value', 'Ibukun-Oluwa3')
                 loc.appendChild(opt)
 
             } else if (district.value == 'YORUBA'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Campground Church'
                 opt.setAttribute('value', 'Campground')
@@ -283,7 +323,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'OTHERS'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Asejire'
                 opt.setAttribute('value', 'Asejire')

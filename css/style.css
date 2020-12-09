@@ -5,11 +5,11 @@ body {
     font-size: x-large;
     background-color: rgb(236, 235, 235);
 }
-input, select, textarea{
+/* input, select, textarea{
     color: #ff0000;
-}
+} */
 h1 {
-    color: cadetblue;
+    color: rgb(16, 17, 17);
 }
 
 b {
@@ -17,7 +17,7 @@ b {
 }
 
 h5 {
-    color: cyan;
+    color: rgb(189, 192, 192);
 
 }
 
@@ -71,39 +71,39 @@ h5 {
     display: block;
 }
 
-select {
+/* select {
     width: 60%;
     height: 20%;
     align-content: center;
     font-size: x-large;
-}
+} */
 
-#form {
+
+/* #form {
     margin-bottom: 10%;
 
-    box-shadow: 4px 10px 20px rgba(128, 124, 124, 0.19), 4px 6px 6px rgba(250, 248, 248, 0.23);
-    background-color: rgb(129, 128, 128);
+    box-shadow: 4px 10px 20px rgba(128, 124, 124, 0.19), 4px 6px 6px rgba(7, 0, 0, 0.23);
+    background-color: rgb(14, 2, 2);
     color: white;
-    /*color: rgba(81, 17, 184, 0.925);*/
-}
-select{
-    color: black;
-}
+    /*color: rgba(81, 17, 184, 0.925);
+}  */
+
+
 
 form{
-    background-color:rgb(131, 128, 128);
+    background-color:rgb(10, 1, 1);
 }
 
-#form>div {
+/* #form>div {
     width: 90%;
-    font-size: large;
-}
+    /* font-size: large; 
+} */
 
-input[type='text'] {
+/* input[type='text'] {
 
     width: 60%;
-}
-
+} */
+/* 
 input[type='tel'],
 input[name='district'],
 input[name='Location'],
@@ -127,25 +127,25 @@ input {
     font-size: large;
     margin-bottom: 15%;
     color: aliceblue;
-}
+} */
 
 div {
     margin-bottom: 5%;
 }
 
 @media (max-width:500px) {
-    label {
+    /* label {
         width: 100%;
     }
 
     input {
         border: none;
         width: 100%;
-    }
+    } */
 }
 
 @media (min-width:720px) {
-    input {
+    /* input {
         font-size: xx-large;
         margin-bottom: 1%;
     }
@@ -181,7 +181,7 @@ div {
     input[name='location'] {
         width: 50%;
 
-    }
+    } */
 
     /**input[name='location']{
         width:30%;

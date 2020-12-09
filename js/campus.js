@@ -12,7 +12,9 @@ category.addEventListener('change', (e) => {
         institution.setAttribute('name', 'school')
         institution.setAttribute('type', 'text')
         institution.setAttribute('required', 'true')
+        institution.classList.add('form-control')
         school.appendChild(institution)
+
 
         //add required to level
         sel_level.setAttribute('required', 'true')
