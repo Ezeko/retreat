@@ -14,18 +14,21 @@ require_once('../config/connect.php');// call connection
 
 <title>RETREAT PARTICIPANTS </title>
 <style>
+#table{
+padding-right: 1%;
+padding-left: 1%;
 </style>
 </head>
 <body >
     <h2 class="w3-center w3-text-big w3-text-purple">DEEPER CHRISTIAN LIFE MINISTRY, DLCF  ORE REGION DECEMBER 2020</h2>
-<h3 class="w3-center w3-text-big w3-text-green">  PARTICIPANTS DETAILS </h3>
-<div style="overflow-x:auto;" >
-<div style = "overflow-y:auto" >
+<h3 class="w3-center w3-text-big w3-text-indigo">  PARTICIPANTS DETAILS </h3>
+<div style="overflow-x:auto;" id="table">
+<div style = "overflow-y:auto"  >
 
 
 <table class="w3-table-all w3-hoverable " id="summaryTable">
     <thead>
-      <tr class="w3-pink">
+      <tr class="w3-purple">
         <th>S/N</th>
       <th>FULLNAME</th>
         <th>PRAYER REQUEST</th>
