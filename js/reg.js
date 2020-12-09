@@ -35,8 +35,12 @@ selection.addEventListener('change', (e) => {
             // console.log(district.value)
             if (district.value == 'CENTRAL'){
                 //first remove all children
-                // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                
+                locOptions.forEach(n => {
+                    console.log(n)
+                    n.remove()
+                });
+
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Central Church'
                 opt.setAttribute('value', 'Central')
@@ -54,7 +58,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'CAMPSITE'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Campsite Church'
                 opt.setAttribute('value', 'Campsite')
@@ -82,7 +89,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'EBENEZER'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Courage Church'
                 opt.setAttribute('value', 'Courage')
@@ -105,7 +115,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'POWERLINE'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Mission Church'
                 opt.setAttribute('value', 'Mission')
@@ -124,7 +137,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'LAGOS-EXPRESS'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Osooro 1 Church'
                 opt.setAttribute('value', 'Osooro1')
@@ -162,7 +178,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'IDIMANGO'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Idimango 1 Church'
                 opt.setAttribute('value', 'Idimango1')
@@ -185,7 +204,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'LANGUAGE'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Igbo Central/ Hausa Church'
                 opt.setAttribute('value', 'IgboCentral/Hausa')
@@ -218,7 +240,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'OMI-AYO'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Omi Ayo Church'
                 opt.setAttribute('value', 'Omi-Ayo')
@@ -237,7 +262,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'IBUKUN-OLUWA'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Ibukun Oluwa 1 Church'
                 opt.setAttribute('value', 'Ibukun-Oluwa1')
@@ -256,7 +284,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'YORUBA'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Campground Church'
                 opt.setAttribute('value', 'Campground')
@@ -284,7 +315,10 @@ selection.addEventListener('change', (e) => {
             } else if (district.value == 'OTHERS'){
                 //first remove all children
                 // console.log(locOptions)
-                locOptions.forEach(n => n.remove())
+                locOptions.forEach(n => {
+                    console.log(n)
+                    return n.remove()
+                });
                 var opt = document.createElement('option');
                 opt.innerHTML = 'Asejire'
                 opt.setAttribute('value', 'Asejire')

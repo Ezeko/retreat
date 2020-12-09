@@ -40,19 +40,19 @@ p {
 #header-img:hover {
     transform: rotate(40deg);
 }
-
+#banner-img{
+    width: 6rem;
+}
 @media (max-width:720px) {
-    #nav-bar {
-        font-size: 20px;
-        float: right;
-        padding-right: 20%;
-        overflow: hidden;
-        padding-top: 10px;
-
+    #banner-img{
+        width: 73rem;
     }
 }
 
 @media (min-width:1200px) {
+    #banner-img{
+        width: 73rem;
+    }
     #nav-bar {
         font-size: 40px;
         float: right;
@@ -173,7 +173,7 @@ b {
 }
 
 #submit:hover {
-    background-color: yellowgreen;
+    background-color: rgb(114, 116, 112);
 }
 
 #about {
