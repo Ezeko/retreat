@@ -49,7 +49,7 @@ require_once('../config/connect.php');// call connection
                 $sn +=1;
             echo "<tr class='w3-hover-blue'>
         <td>$sn</td>
-        <td>".  ($rows['surname']). " ". ($rows['otherNames']). "</td>
+        <td>".  ($rows['surname']). " ". ($rows['otherName']). "</td>
         <td>". ($rows['prayer_request']). "</td>
         <td>". ($rows['phonenumber'])."</td>
     <td>". ($rows['district'])."</td>
