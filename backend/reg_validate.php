@@ -14,11 +14,15 @@ $gender = filter_input(INPUT_POST, 'gender', FILTER_SANITIZE_ENCODED);
 $denomination = filter_input(INPUT_POST, 'denomination', FILTER_SANITIZE_ENCODED);
 $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_ENCODED);
 $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
+$prayer_request = filter_input(INPUT_POST, 'prayer', FILTER_SANITIZE_SPECIAL_CHARS);
+$institution = filter_input(INPUT_POST, 'school', FILTER_SANITIZE_SPECIAL_CHARS);
+$level = filter_input(INPUT_POST, 'level', FILTER_SANITIZE_SPECIAL_CHARS);
+$faculty_department ;
 
 //check if user has been registered before
 
 $check = "SELECT * FROM `participants` WHERE surname = '$surname' AND otherName= '$otherNames' AND H_address='$address' AND phonenumber='$phonenumber' AND isMember= '$isMember' AND district = '$group' 
-AND C_location = '$location' AND gender = '$gender' AND denomination = '$denomination' AND section = '$category' AND age = '$age'";
+AND C_location = '$location' AND gender = '$gender' AND denomination = '$denomination' AND section = '$category' AND age = '$age' AND institution = '$school' AND faculty_department = '$faculty_department' AND currentLevel = '$level' AND prayer_request = '$prayer_request'";
 
 $query_check = mysqli_query($conn, $check) or die(mysqli_error($conn));
 
@@ -31,22 +35,29 @@ echo  "<script>alert('Participant Already Registered!!!'); window.location.repla
 
     switch($category){
         //if adult add into adult database as well
-        case("adult"): $sql = "INSERT INTO `adult` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
+        case("adult"): echo  "<script>alert('Cannot Register as Adult!!! Kindly choose Campus in the category'); window.location.replace('../register');</script>";
+        exit;
+        $sql = "INSERT INTO `adult` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
         VALUES 
         ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
         $query = mysqli_query($conn, $sql) or die(mysqli_error($conn)); break;
 
-        case("youth"): $sql = "INSERT INTO `youths` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
+        case("youth"): echo  "<script>alert('Cannot Register as Youth!!! Kindly choose Campus in the category'); window.location.replace('../register');</script>";
+        exit; 
+        $sql = "INSERT INTO `youths` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
         VALUES 
         ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
         $query = mysqli_query($conn, $sql) or die(mysqli_error($conn)); break;
 
-        case("campus"): $sql = "INSERT INTO `campus` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
+        case("campus"): 
+        $sql = "INSERT INTO `campus` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section, institution, faculty_department, currentLevel, prayer_request) 
         VALUES 
-        ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
+        ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category', '$school','$faculty_department', '$level', '$prayer_request')";
         $query = mysqli_query($conn, $sql) or die(mysqli_error($conn)); break;
 
-        default: $sql = "INSERT INTO `children` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
+        default:echo  "<script>alert('Cannot Register as Children!!! Kindly choose Campus in the category'); window.location.replace('../register');</script>";
+        exit;
+         $sql = "INSERT INTO `children` (surname, otherName, H_address, phonenumber, isMember, district, C_location, denomination, gender, age, section) 
         VALUES 
         ('$surname', '$otherNames', '$address', '$phonenumber', '$isMember', '$group', '$location', '$denomination', '$gender', '$age', '$category')";
     
