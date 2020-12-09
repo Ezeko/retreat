@@ -31,31 +31,34 @@
 
 <body>
     <div class="container">
-    <a href="./"><img src='https://res.cloudinary.com/ezeko/image/upload/v1574728286/images/dlcm_logo_tyrhka.jpg'></a>
-    <span class="container span">
-        <h3>Welcome to Deeper Life 2020 December Retreat Ore Region</h3>
-        <h2>Do not hesitate to fill the below Spaces correctly</h2>
-        <h5 id="gbu" class="blinking">God bless you!!!!!</h5>
-    </span>
+        <a href="./"><img
+                src='https://res.cloudinary.com/ezeko/image/upload/v1574728286/images/dlcm_logo_tyrhka.jpg'></a>
+        <span class="container span">
+            <h3>Welcome to Deeper Life 2020 December Retreat Ore Region</h3>
+            <h2>Do not hesitate to fill the below Spaces correctly</h2>
+            <h5 id="gbu" class="blinking">God bless you!!!!!</h5>
+        </span>
     </div>
     <form action="backend/reg_validate.php" method="POST" class="container">
         <div id="form" class="black  white-text">
             <div class="form-group">
                 <label for="name">Your Surname<b>*</b></label>
-                <input type="text" id="name" name="surname" class="form-control" required />
+                <input type="text" id="name" name="surname" class="form-control" placeholder="Your surname" required />
             </div>
             <div class="form-group">
                 <label for="otherName">Other Names<b>*</b></label>
-                <input type="text" id='otherName'  class="form-control" name="otherName" required />
+                <input type="text" id='otherName' class="form-control" name="otherName" placeholder="Other Names"
+                    required />
             </div>
             <div class="form-group">
                 <label for="address">Your Address<b>*</b></label>
-                <input type="text" id="address" class="form-control" name="address" required />
+                <input type="text" id="address" class="form-control" name="address" placeholder="Your Address"
+                    required />
             </div>
 
             <div class="form-group">
                 <label for="number">Your Phone Number<b>*</b></label>
-                <input type="tel" class="form-control" name="number" required />
+                <input type="tel" class="form-control" name="number" placeholder="e.g 09034547878" required />
             </div>
             <div id="memberSelection" class="form-group">
                 <label for="member">Are you a member?<b>*</b>
@@ -89,7 +92,7 @@
 
             </div>
             <div class="yes hidden form-group" id="location-div">
-            <label for="location">Your District Location<b>*</b></label>
+                <label for="location">Your District Location<b>*</b></label>
                 <select name="location" id="location" class="form-control">
                     <option value="">Choose your church</option>
                 </select>
@@ -98,22 +101,22 @@
             </div>
             <div class="no hidden" class="form-group">
                 <label for="denomination">Your Denomination<b>*</b></label>
-                <input type="text" class="form-control" name="denomination" />
+                <input type="text" class="form-control" name="denomination" placeholder="Enter your church e.g C.A.C" />
             </div>
             <div id="genderSelection">
                 <label for="gender">Gender<b>*</b></label>
                 <input type="radio" id="gender" name="gender" value="male" class="with-gap" required>
-                    male
-                    <input type="radio" id="gender2" name="gender" value="female" class="with-gap" required>
-                    female
-        
+                male
+                <input type="radio" id="gender2" name="gender" value="female" class="with-gap" required>
+                female
+
 
 
             </div>
             <br />
 
             <div class="form-group">
-            <label>Select Category<b>*</b></label>
+                <label>Select Category<b>*</b></label>
                 <select name="category" class="form-control" id="category" required>
                     <option name="category" value=''>Select Category</option>
                     <option name="category" id="category" value="children">Children</option>
@@ -127,7 +130,7 @@
                 <label for="school">Your Institution<b>*</b></label>
             </div>
             <div class="hidden form-group" id="level">
-            <label>Your Level<b>*</b></label>
+                <label>Your Level<b>*</b></label>
                 <select name="level" class="form-control">
                     <option value=''>Select Level</option>
                     <option value='100'>100 Level</option>
@@ -162,10 +165,11 @@
             <br />
             <div class="input-field">
                 <label for="prayer">Prayer Request<b>*</b></label>
-                <input type="text" class="form-control" name="prayer" />
+                <input type="text" class="form-control" name="prayer"
+                    placeholder="What do you want God to do for you?" />
             </div>
 
-            <input type="submit" value="REGISTER" class="btn" />
+            <input type="submit" class="form-control" value="REGISTER" class="btn" />
         </div>
 
 
