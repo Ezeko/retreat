@@ -87,7 +87,7 @@
                     <option value="OMI-AYO"> OMI-AYO GROUP </option>
                     <option value="POWERLINE"> POWERLINE GROUP</option>
                     <option value="YORUBA">YORUBA GROUP</option>
-                    <option value="OTHERS"> OUTSIDE LOCATION (GROUP)</option>
+                    <option value="OUTSIDE"> OUTSIDE LOCATION (GROUP)</option>
                 </select>
 
             </div>

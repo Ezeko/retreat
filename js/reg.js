@@ -312,7 +312,7 @@ selection.addEventListener('change', (e) => {
                 opt.innerHTML = 'Central'
                 opt.setAttribute('value', 'Central_Yoruba')
                 loc.appendChild(opt)
-            } else if (district.value == 'OTHERS'){
+            } else if (district.value == 'OUTSIDE'){
                 //first remove all children
                 // console.log(locOptions)
                 locOptions.forEach(n => {
